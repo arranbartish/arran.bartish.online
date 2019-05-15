@@ -2,15 +2,11 @@
 templateKey: index-page
 title: Arran Bartish
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: Remove
+subheading: I Code ∴ I Deploy
 mainpitch:
-  title: Why Kaldi
-  description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+  title: Remove
+  description: "This is a place where I put my thoughts. They are my own until I change my mind. They're also heavily influenced by those that have come before me. \U0001F914"
 description: >-
   Kaldi is the ultimate spot for coffee lovers who want to learn about their
   java’s origin and support the farmers that grew it. We take coffee production,
