@@ -19,13 +19,19 @@ tags:
   - Agility
   - Robustness
 ---
-![Mothers are awesome](/img/mothersday.jpg)
+![Happy mothers day note with flowers](/img/mothersday.jpg)
 
-Something something
+**Message:** Well engineered tests are critical to ensuring that your production code remains maintainable. 
+
+It can happen that when code is regularly refactored you can get the feedback equivalent of a Christmas tree, all green and red, probably mostly green
+
+Use of good patterns can help ensure that t
+
+**I am passionate about this because** tests can become an impediment and people blame the tests instead of the grassroots engineering decisions that we not made when building them.  
 
 
 
-
+![tdd pro-tip #6: prevent complex test data from spiraling out of control by going to builder & custom comparator early on.](/img/geepawhill-twitter-builder-comparators.png)
 
 ## Images
 
