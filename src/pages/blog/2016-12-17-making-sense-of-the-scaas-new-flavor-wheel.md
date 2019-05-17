@@ -23,15 +23,38 @@ tags:
 
 **Message:** Well engineered tests are critical to ensuring that your production code remains maintainable. 
 
-It can happen that when code is regularly refactored you can get the feedback equivalent of a Christmas tree, all green and red, probably mostly green
+**Why can it be a problem:** It can happen that when code is regularly refactored you can get the feedback equivalent of a Christmas tree, all green and red, probably mostly red
 
-Use of good patterns can help ensure that t
+**Surprising fact:** Testing behaviours and use of good engineering patterns in your tests can ensure your tests are robust to change and remain the guardians of your production application. 
 
-**I am passionate about this because** tests can become an impediment and people blame the tests instead of the grassroots engineering decisions that we not made when building them.  
+**What you'll take away:** We'll discuss some of the common indicators that you might see in your project and two critical things that can be done early to reduce their impact. It's never too late to start introducing these concepts even if your application is mature. 
+
+**I am passionate about this because:** Tests can become an impediment and people blame the tests instead of identifying the grassroots engineering decisions that would make their lives easier.  
+
+**outline**
+
+**Steps on this journey:** 
+
+* I started writing automated tests in 2005 and I've been "test infected" ever since. There are times when I try to imagine how I ever wrote some of the systems I did without the tests that bring me so much confidence today.
+* The early tests that I wrote were not great. In some case I suspect most of the tests were written so that they would pass, but I wonder how much value they actually brought. 
+* \
+   and help me with the code I was writing.
 
 
+
+![Tests (especially microtests) have a journey: First they are prophets, Then they are guides, Then they are guards.](/img/tottinge-twitter-prophets-guides-guards.png)
+
+* There were still things that I was learning about what brittleness meant, size and expressiveness of the tests. There was an emergent pattern for the smells that would develop in my tests, most of the time it was due to a lack of engineering
+
+![Be precise with test assertions. Give your microtest only one reason to fail. Brittleness is over-dependency 90+ percent of the time.](/img/tottinge-twitter-test-engineering.png)
+
+* I started to find that when I made good engineering decisions around my tests early then my tests were clearer, more stable, and more valuable
 
 ![tdd pro-tip #6: prevent complex test data from spiraling out of control by going to builder & custom comparator early on.](/img/geepawhill-twitter-builder-comparators.png)
+
+## References
+
+![Book cover: xUnit Test Patterns - Refactoring Test Code](/img/xunit-test-patterns.gif)
 
 ## Images
 
