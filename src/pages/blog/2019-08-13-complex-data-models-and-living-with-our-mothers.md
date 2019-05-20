@@ -36,15 +36,13 @@ tags:
 **Steps on this journey:** 
 
 * I started writing automated tests in 2005 and I've been "test infected" ever since. There are times when I try to imagine how I ever wrote some of the systems I did without the tests that bring me so much confidence today.
-* The early tests that I wrote were not great. In some case I suspect most of the tests were written so that they would pass, but I wonder how much value they actually brought. 
-* \
-   and help me with the code I was writing.
-
-
+* The early tests that I wrote were not great. In some cases I suspect most of the tests were written so that they would pass, but I wonder how much value they actually brought when they failed, other than the system is broken.  
+* Experience started to show that the most valuable tests i'd written were protecting me as I made changes. They would not only highlight that the system was broken, but they would explain to me why. 
+* The test after approach was moderately successful, but this was only the last part of a tests possible useful life cycle. I wasn't until I was exposed to things like automated acceptance test, behaviour, and example driven approaches that I started to crack the two first two stages from test first approach.
 
 ![Tests (especially microtests) have a journey: First they are prophets, Then they are guides, Then they are guards.](/img/tottinge-twitter-prophets-guides-guards.png)
 
-* There were still things that I was learning about what brittleness meant, size and expressiveness of the tests. There was an emergent pattern for the smells that would develop in my tests, most of the time it was due to a lack of engineering
+* There were still things that I was learning about what brittleness meant, size and expressiveness of the tests. There was an emergent pattern for the smells that would develop in my tests, most of the time it was due to a lack of or mistakes in engineering.
 
 ![Be precise with test assertions. Give your microtest only one reason to fail. Brittleness is over-dependency 90+ percent of the time.](/img/tottinge-twitter-test-engineering.png)
 
