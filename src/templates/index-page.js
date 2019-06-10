@@ -10,9 +10,7 @@ export const IndexPageTemplate = ({
   image,
   title,
   heading,
-  subheading,
   mainpitch,
-  description,
   intro,
 }) => (
   <div>
@@ -58,9 +56,10 @@ export const IndexPageTemplate = ({
             color: 'white',
             lineHeight: '1',
             padding: '0.25em',
+            textAlign: 'center',
           }}
         >
-          {subheading}
+          {heading}
         </h3>
       </div>
     </div>
@@ -78,14 +77,6 @@ export const IndexPageTemplate = ({
                     <h3 className="subtitle">{mainpitch.description}</h3>
                   </div>
                 </div>
-                <div className="columns">
-                  <div className="column is-12">
-                    <h3 className="has-text-weight-semibold is-size-2">
-                      {heading}
-                    </h3>
-                    <p>{description}</p>
-                  </div>
-                </div>
                 <Features gridItems={intro.blurbs} />
                 <div className="columns">
                   <div className="column is-12 has-text-centered">
@@ -96,7 +87,7 @@ export const IndexPageTemplate = ({
                 </div>
                 <div className="column is-12">
                   <h3 className="has-text-weight-semibold is-size-2">
-                    Latest stories
+                    Latest thoughts
                   </h3>
                   <BlogRoll />
                   <div className="column is-12 has-text-centered">
@@ -118,9 +109,7 @@ IndexPageTemplate.propTypes = {
   image: PropTypes.oneOfType([PropTypes.object, PropTypes.string]),
   title: PropTypes.string,
   heading: PropTypes.string,
-  subheading: PropTypes.string,
   mainpitch: PropTypes.object,
-  description: PropTypes.string,
   intro: PropTypes.shape({
     blurbs: PropTypes.array,
   }),
@@ -135,9 +124,7 @@ const IndexPage = ({ data }) => {
         image={frontmatter.image}
         title={frontmatter.title}
         heading={frontmatter.heading}
-        subheading={frontmatter.subheading}
         mainpitch={frontmatter.mainpitch}
-        description={frontmatter.description}
         intro={frontmatter.intro}
       />
     </Layout>
@@ -167,12 +154,10 @@ export const pageQuery = graphql`
           }
         }
         heading
-        subheading
         mainpitch {
           title
           description
         }
-        description
         intro {
           blurbs {
             image {

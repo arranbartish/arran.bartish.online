@@ -2,16 +2,10 @@
 templateKey: index-page
 title: Arran Bartish
 image: /img/home-jumbotron.jpg
-heading: Remove
-subheading: I Code ∴ I Deploy
+heading: I Code ∴ I Deploy
 mainpitch:
-  title: Remove
+  title: "A place to think"
   description: "This is a place where I put my thoughts. They are my own until I change my mind. They're also heavily influenced by those that have come before me. \U0001F914"
-description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
 intro:
   blurbs:
     - image: /img/coffee.png
