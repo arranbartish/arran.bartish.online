@@ -50,6 +50,23 @@ tags:
 
 ![tdd pro-tip #6: prevent complex test data from spiraling out of control by going to builder & custom comparator early on.](/img/geepawhill-twitter-builder-comparators.png)
 
+"Testing shows the presence, not the absence of bugs" - Edsger W. Dijkstra
+
+```java
+@Test
+void willApproveMortgage() {
+  MortgageEvaluator sut = new MortgageEvaluator()
+  Mortgage toApprove = new Mortgage();
+  Applicant john = new Applicant();
+  Money Amount = new Money();
+
+  Decision result = sut.evaluate(toApprove);
+
+
+}
+```
+
+
 ## References
 
 ![Book cover: xUnit Test Patterns - Refactoring Test Code](/img/xunit-test-patterns.gif)
