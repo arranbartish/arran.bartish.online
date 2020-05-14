@@ -57,9 +57,13 @@ tags:
 
 * As valuable as simple examples are, they allow us to ignore some of these principles.
 
+```java
 BowlingGame sut = new BowlingGame();
+sut.roll(10)
+assertThat(sut.score()).isEqualTo(10);
+```
 
-
+But that do we do when our setup data or model is more complicated than `10`
 
 ```java
 @Test
