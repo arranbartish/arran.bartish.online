@@ -63,7 +63,7 @@ sut.roll(10)
 assertThat(sut.score()).isEqualTo(10);
 ```
 
-But that do we do when our setup data or model is more complicated than `10`
+But what do we do when our setup data or model is more complicated than `10`
 
 ```java
 @Test
