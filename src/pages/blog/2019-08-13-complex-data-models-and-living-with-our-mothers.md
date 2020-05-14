@@ -6,9 +6,9 @@ description: >-
   Engineering software is hard and it's even harder when you don't have the
   freedom and confidence to make major changes to your application. Even those
   of us that might have amazing automation protection could find themselves in
-  the awful position where a change could turn your tests from friends to
-  enemies as they all go red. There are engineering patterns that when employed
-  can help keep your test suites friendly. I'll be exploring some of them here. 
+  the awful position where a change could turn your tests from friends to foes
+  as they all go red. There are engineering patterns that when employed can help
+  keep your test suites friendly. I'll be exploring some of them here. 
 featuredpost: true
 featuredimage: /img/mothersday.jpg
 tags:
@@ -23,7 +23,7 @@ tags:
 
 **Message:** Well engineered tests are critical to ensuring that your production code remains maintainable. 
 
-**Why can it be a problem:** It can happen that when code is regularly refactored you can get the feedback equivalent of a Christmas tree, all green and red, probably mostly red
+**Why can it be a problem:** It can happen that as your team adapts to change, your code needs to adapt significantly to its new context. This can reduce result in the feedback equivalent of a Christmas tree, all green and red, probably mostly red
 
 **Surprising fact:** Testing behaviours and use of good engineering patterns in your tests can ensure your tests are robust to change and remain the guardians of your production application. 
 
@@ -43,6 +43,9 @@ tags:
 ![Tests (especially microtests) have a journey: First they are prophets, Then they are guides, Then they are guards.](/img/tottinge-twitter-prophets-guides-guards.png)
 
 * There were still things that I was learning about what brittleness meant, size and expressiveness of the tests. There was an emergent pattern for the smells that would develop in my tests, most of the time it was due to a lack of or mistakes in engineering.
+  * mixed concerns / violating SRP
+  * WET tests
+  * Ignoring design patterns because these are "just" tests
 
 ![Be precise with test assertions. Give your microtest only one reason to fail. Brittleness is over-dependency 90+ percent of the time.](/img/tottinge-twitter-test-engineering.png)
 
@@ -51,6 +54,12 @@ tags:
 ![tdd pro-tip #6: prevent complex test data from spiraling out of control by going to builder & custom comparator early on.](/img/geepawhill-twitter-builder-comparators.png)
 
 "Testing shows the presence, not the absence of bugs" - Edsger W. Dijkstra
+
+* As valuable as simple examples are, they allow us to ignore some of these principles.
+
+BowlingGame sut = new BowlingGame();
+
+
 
 ```java
 @Test
@@ -62,10 +71,9 @@ void willApproveMortgage() {
 
   Decision result = sut.evaluate(toApprove);
 
-
+  
 }
 ```
-
 
 ## References
 
