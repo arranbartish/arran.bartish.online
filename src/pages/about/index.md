@@ -2,6 +2,10 @@
 templateKey: about-page
 title: About Me
 ---
+<img src="https://secure.gravatar.com/avatar/134a026f1ce5a989ea6ffeb8451dc83d?s=256" alt="Arran Bartish" style="border-radius: 50%;"/>
+
+![Arran Bartish](https://secure.gravatar.com/avatar/134a026f1ce5a989ea6ffeb8451dc83d?s=256#portrait)
+
 ### A real person
 
 I am an Australian Canadian and live in Canada, near Montreal, with my wife and three daughters. Originally born in Australia, much of my early adulthood was spent in the United Kingdom. 
