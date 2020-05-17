@@ -21,7 +21,18 @@ tags:
   - Assertions
   - Confidence
   - Front-end
+  - Talk
 ---
 ![Gold bullion](/img/bullion.jpg "The golden master")
 
 Approval testing
+
+
+
+references
+
+[approval tests](https://approvaltests.com/)
+
+Talks:
+
+[GOTO Nights Montréal - 25th October](https://www.meetup.com/GOTO-Nights-Montreal/events/254219454/) - [slides](https://docs.google.com/presentation/d/1yvGXx0OJ1SkZXGmJPmHijIzY2orFYk2KkU9SFWDqaiw/edit?usp=sharing)
