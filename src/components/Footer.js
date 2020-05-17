@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'gatsby'
 
-import facebook from '../img/social/facebook.svg'
 import twitter from '../img/social/twitter.svg'
+import linkedin from '../img/social/linkedin.svg'
 
 const Footer = class extends React.Component {
   render() {
@@ -54,6 +54,14 @@ const Footer = class extends React.Component {
                     className="fas fa-lg"
                     src={twitter}
                     alt="Twitter"
+                    style={{ width: '1em', height: '1em' }}
+                  />
+                </a>
+                <a title="linked-in" href="https://ca.linkedin.com/in/arran-bartish-7720a21">
+                  <img
+                    className="fas fa-lg"
+                    src={linkedin}
+                    alt="Linked-In"
                     style={{ width: '1em', height: '1em' }}
                   />
                 </a>
