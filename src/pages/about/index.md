@@ -10,7 +10,7 @@ style="border-radius: 50%;
 
 ### A real person
 
-I am an Australian Canadian and live in Canada, near Montreal, with my wife and three daughters. Originally born and raised in Australia, much of my early adulthood was spent in the United Kingdom. 
+I am an Australian Canadian and live in Canada, near Montreal, with my wife and three daughters. Originally born and raised in Australia, much of my early adulthood was spent in the United Kingdom. I often draw metaphors from obscure movie references, bonus points if you spot them.
 
 #### Things I love
 
@@ -18,6 +18,7 @@ I am an Australian Canadian and live in Canada, near Montreal, with my wife and 
 * reading
 * Sci-Fi
 * computers
+* movies
 
 ### Education
 
