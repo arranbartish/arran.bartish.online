@@ -56,7 +56,7 @@ tags:
 
 "Testing shows the presence, not the absence of bugs" - Edsger W. Dijkstra
 
-* As valuable as simple examples are, they allow us to ignore some of these principles.
+* As valuable as simple examples are, they don't help us when we get to the components that need complex object graphs or data models.
 
 ```java
 BowlingGame sut = new BowlingGame();
@@ -76,7 +76,16 @@ void willApproveMortgage() {
 
   Decision result = sut.evaluate(toApprove);
 
-  
+  assertSoftly(softly -> {
+      softly.assertThat(mansion.guests()).as("Living Guests").isEqualTo(7);
+      softly.assertThat(mansion.kitchen()).as("Kitchen").isEqualTo("clean");
+      softly.assertThat(mansion.library()).as("Library").isEqualTo("clean");
+      softly.assertThat(mansion.revolverAmmo()).as("Revolver Ammo").isEqualTo(6);
+      softly.assertThat(mansion.candlestick()).as("Candlestick").isEqualTo("pristine");
+      softly.assertThat(mansion.colonel()).as("Colonel").isEqualTo("well kempt");
+      softly.assertThat(mansion.professor()).as("Professor").isEqualTo("well kempt");
+      // no need to call assertAll, it is done by assertSoftly.
+   });
 }
 ```
 
