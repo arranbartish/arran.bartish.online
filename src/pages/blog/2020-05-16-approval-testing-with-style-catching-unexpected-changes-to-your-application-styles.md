@@ -16,5 +16,12 @@ description: >-
   testing into your visual regression suite.
 featuredpost: false
 featuredimage: /img/bullion.jpg
+tags:
+  - Testing
+  - Assertions
+  - Confidence
+  - Front-end
 ---
+![Gold bullion](/img/bullion.jpg "The golden master")
+
 Approval testing
