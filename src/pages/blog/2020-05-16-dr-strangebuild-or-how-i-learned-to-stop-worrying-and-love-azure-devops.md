@@ -20,6 +20,8 @@ tags:
   - Automation
   - Tools
 ---
+![bikini atoll nuclear test](/img/nuclear-weapons-test.jpg "nuclear explosion")
+
 Azure devops can do Java builds
 
 YAML! why?
