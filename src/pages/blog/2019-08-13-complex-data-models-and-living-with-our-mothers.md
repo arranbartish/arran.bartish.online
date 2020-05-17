@@ -18,6 +18,7 @@ tags:
   - Quality
   - Agility
   - Robustness
+  - Resilience
 ---
 ![Happy mothers day note with flowers](/img/mothersday.jpg)
 
@@ -40,18 +41,18 @@ tags:
 * Experience started to show that the most valuable tests i'd written were protecting me as I made changes. They would not only highlight that the system was broken, but they would explain to me why. 
 * The test after approach was moderately successful, but this was only the last part of a tests possible useful life cycle. I wasn't until I was exposed to things like automated acceptance test, behaviour, and example driven approaches that I started to crack the two first two stages from test first approach.
 
-![Tests (especially microtests) have a journey: First they are prophets, Then they are guides, Then they are guards.](/img/tottinge-twitter-prophets-guides-guards.png)
+![Tests (especially microtests) have a journey: First they are prophets, Then they are guides, Then they are guards.](/img/tottinge-twitter-prophets-guides-guards.png "Tim \"Agile Otter\" Ottinger on the test journey")
 
 * There were still things that I was learning about what brittleness meant, size and expressiveness of the tests. There was an emergent pattern for the smells that would develop in my tests, most of the time it was due to a lack of or mistakes in engineering.
   * mixed concerns / violating SRP
   * WET tests
   * Ignoring design patterns because these are "just" tests
 
-![Be precise with test assertions. Give your microtest only one reason to fail. Brittleness is over-dependency 90+ percent of the time.](/img/tottinge-twitter-test-engineering.png)
+![Be precise with test assertions. Give your microtest only one reason to fail. Brittleness is over-dependency 90+ percent of the time.](/img/tottinge-twitter-test-engineering.png "Tim \"Agile Otter\" Ottinger on tests that test too much")
 
 * I started to find that when I made good engineering decisions around my tests early then my tests were clearer, more stable, and more valuable
 
-![tdd pro-tip #6: prevent complex test data from spiraling out of control by going to builder & custom comparator early on.](/img/geepawhill-twitter-builder-comparators.png)
+![tdd pro-tip #6: prevent complex test data from spiraling out of control by going to builder & custom comparator early on.](/img/geepawhill-twitter-builder-comparators.png "GeePaw Hill on planning for your system to become more complex early")
 
 "Testing shows the presence, not the absence of bugs" - Edsger W. Dijkstra
 
