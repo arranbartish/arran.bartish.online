@@ -43,6 +43,8 @@ tags:
 
 ![Tests (especially microtests) have a journey: First they are prophets, Then they are guides, Then they are guards.](/img/tottinge-twitter-prophets-guides-guards.png "Tim \"Agile Otter\" Ottinger on the test journey")
 
+[Tim](https://twitter.com/tottinge/status/1126136286966943745)
+
 * There were still things that I was learning about what brittleness meant, size and expressiveness of the tests. There was an emergent pattern for the smells that would develop in my tests, most of the time it was due to a lack of or mistakes in engineering.
   * mixed concerns / violating SRP
   * WET tests
@@ -50,13 +52,17 @@ tags:
 
 ![Be precise with test assertions. Give your microtest only one reason to fail. Brittleness is over-dependency 90+ percent of the time.](/img/tottinge-twitter-test-engineering.png "Tim \"Agile Otter\" Ottinger on tests that test too much")
 
+[Tim](https://twitter.com/tottinge/status/1127614638785486849)
+
 * I started to find that when I made good engineering decisions around my tests early then my tests were clearer, more stable, and more valuable
 
 ![tdd pro-tip #6: prevent complex test data from spiraling out of control by going to builder & custom comparator early on.](/img/geepawhill-twitter-builder-comparators.png "GeePaw Hill on planning for your system to become more complex early")
 
-[bob](https://twitter.com/unclebobmartin/status/1213826854957854721)
+[GeePawHill](https://twitter.com/GeePawHill/status/1043228698512695296)
 
 ![Tests are partitioned by threads of behavior, not by classes. Any given test will often involve many classes within the tested behavior.   You may partition your production code with classes; but should not force your tests to adhere to that structure.](/img/uncle-bob-martin-2020-01-05.png "Robert Martin on the scope of a test")
+
+[bob](https://twitter.com/unclebobmartin/status/1213826854957854721)
 
 "Testing shows the presence, not the absence of bugs" - Edsger W. Dijkstra
 
