@@ -89,6 +89,9 @@ void willApproveMortgage() {
 }
 ```
 
+Object Mother which is a combination of Creation Method, Test Helper, and optionally Automated Teardown.
+Meszaros, G. (2010). XUnit test patterns: refactoring test code.
+
 ## References
 
 ![Book cover: xUnit Test Patterns - Refactoring Test Code](/img/xunit-test-patterns.gif)
