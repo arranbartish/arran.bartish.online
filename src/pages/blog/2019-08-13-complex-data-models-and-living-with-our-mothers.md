@@ -22,15 +22,19 @@ tags:
 ---
 ![Happy mothers day note with flowers](/img/mothersday.jpg)
 
-**Message:** Well engineered tests are critical to ensuring that your production code remains maintainable. 
+****
 
-**Why can it be a problem:** It can happen that as your team adapts to change, your code needs to adapt significantly to its new context. This can reduce result in the feedback equivalent of a Christmas tree, all green and red, probably mostly red
+****
 
-**Surprising fact:** Testing behaviours and use of good engineering patterns in your tests can ensure your tests are robust to change and remain the guardians of your production application. 
+**Message:** If you're struggling with tests that are hard to understand or maintain, engineering patterns may be your path to maintainable production software. 
 
-**What you'll take away:** We'll discuss some of the common indicators that you might see in your project and two critical things that can be done early to reduce their impact. It's never too late to start introducing these concepts even if your application is mature. 
+**Why can it be a problem:** It can happen that as your team adapts to change, your code needs to adapt significantly to its new context. Your hundreds or thousands of tests can reduce confidence and result in the feedback equivalent of a Christmas tree (All green and red, probably mostly red). 
 
-**I am passionate about this because:** Tests can become an impediment and people blame the tests instead of identifying the grassroots engineering decisions that would make their lives easier.  
+**Surprising fact:** The use of some good engineering patterns in your tests can ensure your tests are robust to change and remain the guardians of your confidence and production software. 
+
+**What you'll take away:** We'll discuss some of the common indicators that you might see in your project and some critical things that can be done early to reduce their impact. It's never too late to start introducing these concepts even if your software is mature. 
+
+**I am passionate about this because:** I am excited about software and the delight that it brings everyone who interacts with it, including end users, operators and the developers.  
 
 **outline**
 
