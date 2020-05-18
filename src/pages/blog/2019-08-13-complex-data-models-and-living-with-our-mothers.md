@@ -54,6 +54,10 @@ tags:
 
 ![tdd pro-tip #6: prevent complex test data from spiraling out of control by going to builder & custom comparator early on.](/img/geepawhill-twitter-builder-comparators.png "GeePaw Hill on planning for your system to become more complex early")
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Tests are partitioned by threads of behavior, not by classes. Any given test will often involve many classes within the tested behavior. <br><br>You may partition your production code with classes; but should not force your tests to adhere to that structure.</p>&mdash; Uncle Bob Martin (@unclebobmartin) <a href="https://twitter.com/unclebobmartin/status/1213826854957854721?ref_src=twsrc%5Etfw">January 5, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+[bob](https://twitter.com/unclebobmartin/status/1213826854957854721)
+
 "Testing shows the presence, not the absence of bugs" - Edsger W. Dijkstra
 
 * As valuable as simple examples are, they don't help us when we get to the components that need complex object graphs or data models.
@@ -89,8 +93,13 @@ void willApproveMortgage() {
 }
 ```
 
-Object Mother which is a combination of Creation Method, Test Helper, and optionally Automated Teardown.
-Meszaros, G. (2010). XUnit test patterns: refactoring test code.
+> The 'mother of all creation methods' is Object Mother
+- Meszaros, G. (2010). XUnit test patterns: refactoring test code.
+
+> Object Mother which is a combination of [Creation Method](http://xunitpatterns.com/Creation%20Method.html), [Test Helper](http://xunitpatterns.com/Test%20Helper.html), and optionally [Automated Teardown](http://xunitpatterns.com/Automated%20Teardown.html).
+- Meszaros, G. (2010). XUnit test patterns: refactoring test code.
+
+
 
 ## References
 
