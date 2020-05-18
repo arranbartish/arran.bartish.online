@@ -22,9 +22,84 @@ tags:
 ---
 ![Happy mothers day note with flowers](/img/mothersday.jpg)
 
-****
+- - -
 
-****
+Writing software is exciting and it can be quite a personal kick to observe the delight of those that interact with the software. It is my opinion that those who interact with the software goes beyond the end-user and includes those that operate, develop, and provide vision of the software which includes;
+
+* testers
+* programmers
+* analysts
+* subject matter experts
+* operations
+
+There are properties of the software that we write which can delight these groups and I feel has a direct impact on being able to sustainably delight our end-users as a result. I am going to focus on some techniques that contribute to resilience to change. 
+
+## The basics are good
+
+When we first start to look at automated testing there are a lot of simple examples which are intended to get you excited and give you the basics. The system under test (sut) is simple and easy to rationalize with simple inputs and results.  
+
+```java
+BowlingGame sut = new BowlingGame();
+sut.roll(10)
+assertThat(sut.score()).isEqualTo(10);
+```
+
+The basics of red, green, refactor applied over and over again can lead us to some of the testing patterns that we want to apply to maintain our delight. Eventually we'll come across an existing data model that may be more difficult to create. It may be that the model is a fairly well understood concept within the business, perhaps something that is generated from a government regulated financial model.  
+
+\[insert model uml]
+
+## The noise trap
+
+If we don't grow then we start to see some of the test smells that make our tests fragile and start to reduce our delight. 
+
+```java
+private MortgageEvaluator sut = new MortgageEvaluator();
+
+@Test
+void willApproveMortgage_WhenMoreAssets_ThanDebts() {  
+  Application application = new Application();
+  Applicant applicant = new Applicant();  
+  applicant.setName("John");  
+  application.set(applicant);  
+  Employer job = new Employer();  
+  job.setRole("programmer");  
+  job.setCompany("Delightful Software");  
+  job.setSalary(new Money("100"));  
+  applicant.setEmployer(job);  
+  applicant.setDebts(List.of(new Debt(new Money("50")))); 
+  applicant.setAssets(List.of(new Asset(new Money("60"))));  
+  application.setRequestedAmount(new Money(100));
+
+  Decision result = sut.evaluate(toApprove);
+
+  assertThat(result.getLineOfCredit()).extracting(LineOfCredit::getMaximum).isEqualTo(100);
+  assertThat(result.getResult()).isEqualTo(approved);
+ }
+```
+
+There is very little delight in the above test and we have just one test case. We will write the next test case and we'll have duplicate code that we'll refactor and eventually we'll start to use the [Creation Method](http://xunitpatterns.com/Creation%20Method.html). Nexit
+
+These are great places to start and they are valuable, however we must recognize that as professionals we must grow beyond the basics in order to solve those more interesting problems. If we don't then we run the risk of everything looking like a nail to our proverbial hammer. 
+
+## 
+
+If we apply the basics to all our problems then we'll find that our tests become noisy. 
+
+test with simple assert
+
+mothers
+
+traps
+
+other things
+
+what other people say
+
+I've been writing software and its automated tests since 2006 and as a continuous learner I've developed skills and reflexes that make the tests and systems that I write more delightful. 
+
+We are all developers and we are all on our own journeys to be better every day, so with that in mind, I can't offer you a short cut or a secret sauce, but I can and there is no secret sauce. 
+
+. I remember seeing tests that had 
 
 **Message:** If you're struggling with tests that are hard to understand or maintain, engineering patterns may be your path to maintainable production software. 
 
