@@ -7,9 +7,9 @@ description: >-
   freedom and confidence to make major changes to your application. Even those
   of us that might have amazing automation protection could find themselves in
   the awful position where a change could turn your tests from friends to foes
-  as they all go red. There are engineering patterns that when employed can help
-  keep your test suites friendly. I want to introduce you to the 'mother of all
-  creation methods', Object Mother. 
+  as they all go red. There are patterns that can help keep your test suites
+  friendly. I want to introduce you to the 'mother of all creation methods',
+  Object Mother. 
 featuredpost: true
 featuredimage: /img/mothersday.jpg
 tags:
