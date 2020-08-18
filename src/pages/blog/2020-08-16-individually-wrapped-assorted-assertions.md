@@ -19,13 +19,25 @@ tags:
 ---
 ![Unwrapped lolly with wrapped lollies in the background](/img/lolly.jpg "Unwrapped lolly")
 
-When it comes to our tests, if our tests are green we're satisfied and more or less ready to roll this change out to production. If our tests are red then our system is broken or deviated from the behaviour that would would otherwise describe as "working", thank goodness we have those tests. It can happen that we look to the test report and our hearts sink at the least helpful feedback we could get. 
+When it comes to our tests, if our tests are green we're satisfied and more or less ready to roll this change out to production. When our tests fail we desperately need information, but what do we do if your tests give us almost no hint at all.  
 
 ```
 expected <true> but was <false>
 ```
 
-Typically this sort of feedback may come from an assertion that may look like this `assertEquals(true, sut.doSomething() > 0);`
+Typically this sort of feedback may come from an assertion that we commonly see like this. `assertEquals(true, sut.doSomething() > 0);`
+
+There are great techniques that can help us address this. TDD is one such technique where we make the test fail first. This allows us to see how the test is going to fail and gives us our first great opportunity to help our future selves. That being said if we don't take advantage of the various assertion libraries available then even detailed feedback could be brittle and misleading. 
+
+
+
+
+
+
+
+ , where we see what a failing test looks like first. This is a great first opportunity to identify missing feedback.  tIf our tests are red it generally means that our system is broken, or that it has deviated from the behaviour that we would describe as "working". Thank goodness we have those tests. It can happen that we look to the test report and our hearts sink at the least helpful feedback we could get.
+
+
 
 A couple of questions instantly spring to mind from this feedback: 
 
