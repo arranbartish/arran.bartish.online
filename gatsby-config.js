@@ -58,6 +58,14 @@ module.exports = {
               destinationDir: 'static',
             },
           },
+          'gatsby-remark-code-titles',
+          {
+            resolve: 'gatsby-remark-plantuml-lite',
+            options: { // Configuration options
+              imageType: 'svg'
+            }
+          },
+          'gatsby-remark-prismjs'
         ],
       },
     },
